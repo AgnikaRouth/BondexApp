@@ -1,0 +1,7 @@
+{
+  "name": "bondex",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
