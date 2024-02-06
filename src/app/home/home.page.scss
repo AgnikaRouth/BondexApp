@@ -1,20 +1,32 @@
 .bondPoints {
   text-align: center;
+  color: #ffff;
 }
-ion-card {
-  --background: #rgba(255, 255, 255, 0.5);
-  // --color: #ffff;
+.ion-card-activity {
+  --background: rgba(169, 169, 169, 0.2);
+  --color: #ffff;
+  font-size: 10px;
 }
 
-ion-card-title {
-  // --color: #ffffff;
+.ion-card-title-activity {
+  --color: #ffffff;
+  font-size: 10px;
+}
+.ion-card-header-activity {
+  position: relative;
+}
+.center-right {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-60%);
 }
 // ion-card-content {
 //   --color: #ffffff;
 // }
 .activityDiv {
   display: flex;
-  // width: 90%;
+  width: 100%;
   margin: auto;
   justify-content: center;
 }
@@ -22,4 +34,14 @@ ion-card-title {
   max-width: 1200px; /* Set a maximum width for the container */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
+}
+ion-content {
+  --background: radial-gradient(
+    circle,
+    rgba(13, 99, 82, 1) 16%,
+    rgba(13, 36, 73, 1) 43%,
+    rgba(2, 20, 43, 1) 100%,
+    rgba(39, 111, 218, 1) 100%,
+    rgba(2, 20, 43, 1) 100%
+  );
 }

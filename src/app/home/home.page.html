@@ -1,18 +1,16 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title style="color: white">Welcome Mohammed</ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-img
-          src="../../assets/icon/avatar.svg"
-          style="margin-top: 15px"
-        ></ion-img>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+  <ion-header class="ion-no-border" style="background: transparent">
+    <ion-item style="background: transparent" lines="none">
+      <ion-title style="color: black">Welcome Mohammed</ion-title>
+
+      <ion-img
+        slot="end"
+        src="../../assets/icon/avatar.svg"
+        style="margin-top: 15px"
+      ></ion-img>
+    </ion-item>
+  </ion-header>
+
   <div class="bondPoints">
     <h4>Bond points</h4>
     <h1>24.29</h1>
@@ -23,19 +21,34 @@
     <p>Tap to boost your Bond points</p>
   </div>
   <div class="activityDiv">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Activity Rate</ion-card-title>
+    <ion-card class="ion-card-activity">
+      <ion-card-header class="ion-card-header-activity">
+        <ion-card-title class="ion-card-title-activity"
+          >Activity Rate</ion-card-title
+        >
+        <ion-icon name="alert-circle-outline" class="center-right"></ion-icon>
       </ion-card-header>
 
       <ion-card-content> 0.75 points/hr </ion-card-content>
     </ion-card>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Activity Rate</ion-card-title>
+    <ion-card class="ion-card-activity">
+      <ion-card-header class="ion-card-header-activity">
+        <ion-card-title class="ion-card-title-activity"
+          >Activity Rate</ion-card-title
+        >
+        <ion-icon name="alert-circle-outline" class="center-right"></ion-icon>
       </ion-card-header>
 
       <ion-card-content> 0.75 points/hr </ion-card-content>
     </ion-card>
   </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Activity Rate</ion-card-title>
+      <ion-icon name="alert-circle-outline" class="center-right"></ion-icon>
+    </ion-card-header>
+
+    <ion-card-content> 0.75 points/hr </ion-card-content>
+  </ion-card>
 </ion-content>
