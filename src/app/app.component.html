@@ -1,3 +1,27 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="profile" routerLink="/profile">
+        <ion-icon name="person-circle-outline" ion-color-dark></ion-icon>
+        Profile
+      </ion-tab-button>
+      <ion-tab-button tab="jobs" routerLink="/jobs">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        Jobs
+      </ion-tab-button>
+      <ion-tab-button tab="home" routerLink="/home">
+        <ion-icon src="../assets/icon/bondex-logo.svg"></ion-icon>
+        Home
+      </ion-tab-button>
+      <ion-tab-button tab="invite" routerLink="/invite">
+        <ion-icon name="person-add-outline"></ion-icon>
+        Invite
+      </ion-tab-button>
+      <ion-tab-button tab="notifications" routerLink="/notifications">
+        <ion-icon name="notifications-outline"></ion-icon>
+        Notifications
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-app>

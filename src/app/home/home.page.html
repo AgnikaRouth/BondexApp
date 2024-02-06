@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="color: white">Welcome Mohammed</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-img
+          src="../../assets/icon/avatar.svg"
+          style="margin-top: 15px"
+        ></ion-img>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="bondPoints">
+    <h4>Bond points</h4>
+    <h1>24.29</h1>
+  </div>
+  <div class="bondPoints">
+    <img src="../../assets/icon/boosting-indicator.svg" />
+    <img src="../../assets/icon/arrow.svg" />
+    <p>Tap to boost your Bond points</p>
+  </div>
+  <div class="activityDiv">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Activity Rate</ion-card-title>
+      </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-card-content> 0.75 points/hr </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Activity Rate</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content> 0.75 points/hr </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
