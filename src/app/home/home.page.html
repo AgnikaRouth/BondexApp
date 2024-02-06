@@ -12,8 +12,14 @@
   </ion-header>
 
   <div class="bondPoints">
-    <h4>Bond points</h4>
-    <h1>24.29</h1>
+    <h4 style="font-size: 15px; margin-bottom: 0px; font-weight: 600">
+      Bond points
+    </h4>
+    <h1
+      style="color: #18a187; font-size: 43px; font-weight: 600; margin-top: 0px"
+    >
+      24.29
+    </h1>
   </div>
   <div class="bondPoints">
     <img src="../../assets/icon/boosting-indicator.svg" />
@@ -42,13 +48,34 @@
       <ion-card-content> 0.75 points/hr </ion-card-content>
     </ion-card>
   </div>
-
-  <ion-card>
+  <!-- DASHBOARD SECTION -->
+  <ion-card class="ion-card-dashboard">
     <ion-card-header>
-      <ion-card-title>Activity Rate</ion-card-title>
-      <ion-icon name="alert-circle-outline" class="center-right"></ion-icon>
+      <ion-card-title style="font-weight: 600">Your Dashboard</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content> 0.75 points/hr </ion-card-content>
+    <ion-card-content>
+      <!-- Job Applications card -->
+      <ion-card style="color: black; border-radius: 12px">
+        <ion-card-header style="padding-bottom: 0px">
+          <ion-card-title style="font-size: 15px"
+            >Active job applications</ion-card-title
+          >
+        </ion-card-header>
+        <ion-card-content
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <ion-text ion-color-dark style="font-weight: 600; font-size: 35px"
+            >2</ion-text
+          >
+
+          <ion-img src="../../assets/icon/featured-icon.svg" />
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
   </ion-card>
 </ion-content>

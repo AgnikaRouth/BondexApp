@@ -1,3 +1,14 @@
+ion-content {
+  --background: radial-gradient(
+    circle,
+    rgba(13, 99, 82, 1) 16%,
+    rgba(13, 36, 73, 1) 43%,
+    rgba(2, 20, 43, 1) 100%,
+    rgba(39, 111, 218, 1) 100%,
+    rgba(2, 20, 43, 1) 100%
+  );
+}
+
 .bondPoints {
   text-align: center;
   color: #ffff;
@@ -30,18 +41,11 @@
   margin: auto;
   justify-content: center;
 }
-.container {
-  max-width: 1200px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px;
-}
-ion-content {
-  --background: radial-gradient(
-    circle,
-    rgba(13, 99, 82, 1) 16%,
-    rgba(13, 36, 73, 1) 43%,
-    rgba(2, 20, 43, 1) 100%,
-    rgba(39, 111, 218, 1) 100%,
-    rgba(2, 20, 43, 1) 100%
-  );
+
+.ion-card-dashboard {
+  --background: #ebebeb;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-radius: 15px 15px 0px 0px;
 }
