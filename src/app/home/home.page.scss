@@ -49,21 +49,23 @@ ion-content {
   margin-left: 0px;
   border-radius: 15px 15px 0px 0px;
 }
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+.swiper-wrapper {
+  width: 140px;
 }
-//  .swiper {
-//   width: 100%;
-//   height: 300px;
-//   margin: 20px auto;
-// }
+.swiper-slide {
+  font-size: 18px;
+  background: radial-gradient(
+    circle,
+    rgba(13, 99, 82, 1) 16%,
+    rgba(13, 36, 73, 1) 43%,
+    rgba(2, 20, 43, 1) 100%,
+    rgba(39, 111, 218, 1) 100%,
+    rgba(2, 20, 43, 1) 100%
+  );
+
+  height: 100px;
+
+  margin-right: 20px;
+  border-radius: 8px;
+}

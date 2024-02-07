@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import Swiper from 'swiper';
 
 @Component({
@@ -7,23 +7,14 @@ import Swiper from 'swiper';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  @ViewChild('swiperRef', { read: ElementRef }) swiperRef:
+    | ElementRef
+    | undefined;
   constructor() {}
 
-  // ionViewDidEnter() {
-  //   // Initialize Swiper when the view has entered
-  //   var mySwiper = new Swiper('.swiper-container', {
-  //     direction: 'horizontal',
-  //     loop: true,
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //     },
-  //   });
-  // }
-
   ionViewDidEnter() {
-    // Initialize Swiper when the view has entered
     var swiper = new Swiper('.mySwiper', {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
       // centeredSlides: true,
       loop: true,
       direction: 'horizontal',
