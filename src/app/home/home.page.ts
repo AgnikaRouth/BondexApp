@@ -16,12 +16,12 @@ export class HomePage {
     var swiper = new Swiper('.mySwiper', {
       slidesPerView: 2.5,
       // centeredSlides: true,
-      loop: true,
+      // loop: true,
       direction: 'horizontal',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'fraction',
+      // },
     });
   }
 }
