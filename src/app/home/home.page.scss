@@ -69,3 +69,11 @@ ion-content {
   margin-right: 20px;
   border-radius: 8px;
 }
+ion-toolbar {
+  --ion-toolbar-background-color: transparent;
+  --ion-toolbar-text-color: white;
+}
+ion-button {
+  --background: #18a187;
+  --border-radius: 20px;
+}

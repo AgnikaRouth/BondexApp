@@ -1,30 +1,54 @@
 <ion-content [fullscreen]="true">
-  <ion-header class="ion-no-border" style="background: transparent">
-    <ion-item style="background: transparent" lines="none">
-      <ion-title style="color: black">Welcome Mohammed</ion-title>
-
-      <ion-img
+  <ion-header class="ion-no-border" [translucent]="true">
+    <ion-toolbar color="translucent">
+      <ion-title style="font-weight: 400; color: white; font-size: 15px"
+        >Welcome Mohammed</ion-title
+      >
+      <ion-avatar slot="end" style="margin-top: 15px; margin-right: 10px">
+        <img src="../../assets/icon/avatar.svg" />
+      </ion-avatar>
+      <!-- <ion-img
         slot="end"
         src="../../assets/icon/avatar.svg"
         style="margin-top: 15px"
-      ></ion-img>
-    </ion-item>
+      ></ion-img> -->
+    </ion-toolbar>
   </ion-header>
 
   <div class="bondPoints">
-    <h4 style="font-size: 15px; margin-bottom: 0px; font-weight: 600">
-      Bond points
-    </h4>
-    <h1
-      style="color: #18a187; font-size: 43px; font-weight: 600; margin-top: 0px"
-    >
-      24.29
-    </h1>
+    <ion-text>
+      <h4
+        style="
+          font-size: 15px;
+          margin-bottom: 0px;
+          font-weight: 600;
+          margin-top: 5px;
+        "
+      >
+        Bond points
+      </h4>
+    </ion-text>
+    <ion-text>
+      <h1
+        style="
+          color: #18a187;
+          font-size: 43px;
+          font-weight: 600;
+          margin-top: 0px;
+        "
+      >
+        24.29
+      </h1>
+    </ion-text>
   </div>
   <div class="bondPoints">
     <img src="../../assets/icon/boosting-indicator.svg" height="160px" />
     <img src="../../assets/icon/arrow.svg" height="40px" />
-    <p style="font-size: 10px; color: #ebebeb">Tap to boost your Bond points</p>
+    <ion-text>
+      <p style="font-size: 10px; color: #ebebeb">
+        Tap to boost your Bond points
+      </p>
+    </ion-text>
   </div>
   <div class="activityDiv">
     <ion-card class="ion-card-activity">
@@ -49,13 +73,16 @@
     </ion-card>
   </div>
   <!-- DASHBOARD SECTION -->
-  <ion-list class="ion-card-dashboard" style="background: #ebebeb">
+  <ion-list
+    class="ion-card-dashboard"
+    style="background: #ebebeb; margin-top: 15px"
+  >
     <ion-list-header style="font-weight: 600; font-size: 20px" ion-color-dark>
       Your Dashboard
     </ion-list-header>
     <ion-item-group>
       <!-- Job Applications card -->
-      <ion-card style="color: black; border-radius: 12px">
+      <ion-card style="color: black; border-radius: 12px; margin-left: 10px">
         <ion-card-header style="padding-bottom: 0px">
           <ion-card-title style="font-size: 15px">
             Active job applications
@@ -72,7 +99,7 @@
             2
           </ion-text>
 
-          <ion-img src="../../assets/icon/featured-icon.svg" />
+          <img src="../../assets/icon/featured-icon.svg" />
         </ion-card-content>
       </ion-card>
       <ion-text ion-color-dark>
@@ -134,8 +161,70 @@
             </p>
           </div>
           <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
         </div>
       </div>
+
+      <ion-text ion-color-dark>
+        <h3
+          style="
+            font-weight: 600;
+            font-size: 18px;
+            margin-left: 15px;
+            margin-top: 45px;
+          "
+        >
+          Invite your friends
+        </h3>
+      </ion-text>
+      <ion-card
+        style="
+          color: black;
+          border-radius: 12px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        "
+      >
+        <ion-card-content>
+          <ion-grid>
+            <ion-row class="ion-text-center">
+              <ion-col>
+                <img src="../../assets/icon/featured-icon.svg" height="100px" />
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-text-center">
+              <ion-col>
+                <ion-text
+                  ion-color-dark
+                  style="font-weight: 600; font-size: 20px; margin-top: 10px"
+                >
+                  Build your network
+                  <h3></h3>
+                </ion-text>
+                <ion-text ion-color-dark>
+                  <p>
+                    Each actively boosting connection increases your activity
+                    rate by +0.02 points per hour
+                  </p>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-text-center">
+              <ion-col>
+                <ion-button ion-color-success>
+                  <ion-icon
+                    name="albums-outline"
+                    style="margin-right: 5px"
+                  ></ion-icon>
+                  Copy Referral Link
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
     </ion-item-group>
   </ion-list>
 </ion-content>
