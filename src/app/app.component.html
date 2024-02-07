@@ -10,8 +10,11 @@
         <ion-icon name="briefcase-outline"></ion-icon>
         Jobs
       </ion-tab-button>
-      <ion-tab-button tab="home" routerLink="/home">
-        <ion-icon src="../assets/icon/bondex-logo.svg"></ion-icon>
+      <ion-tab-button tab="home" routerLink="/home" (click)="onClick()">
+        <ion-icon
+          src="../assets/icon/bondex-logo.svg"
+          [style.fontSize]="iconSize"
+        ></ion-icon>
       </ion-tab-button>
       <ion-tab-button tab="invite" routerLink="/invite">
         <ion-icon name="person-add-outline"></ion-icon>

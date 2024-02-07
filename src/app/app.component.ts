@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   constructor() {}
+
+  iconSize: string = '';
+
+  onClick() {
+    this.iconSize = '45px';
+  }
 }
